@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Debug extends AppCompatActivity {
-    static final String TAG = null;
+    static final String TAG = "DEBUG";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
