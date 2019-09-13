@@ -1,13 +1,11 @@
 package com.example.primeiroapp.exemplo0;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.widget.TextView;
 
 import com.example.primeiroapp.R;
 
-public class SegundaActivity extends Debug {
+public class SegundaActivity extends CicloDeVida {
     TextView txtRecebido;
 
     @Override

@@ -1,7 +1,5 @@
 package com.example.primeiroapp.exemplo0;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +8,7 @@ import android.widget.EditText;
 
 import com.example.primeiroapp.R;
 
-public class PrimeiraActivity extends Debug {
+public class PrimeiraActivity extends CicloDeVida {
     EditText editTextIda;
     Button btnMudarTela;
 
@@ -25,7 +23,7 @@ public class PrimeiraActivity extends Debug {
         btnMudarTela.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                chamarTela();
+                    chamarTela();
             }
         });
     }

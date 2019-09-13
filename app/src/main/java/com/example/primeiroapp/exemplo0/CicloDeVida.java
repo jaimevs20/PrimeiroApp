@@ -7,7 +7,7 @@ import android.util.Log;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Debug extends AppCompatActivity {
+public class CicloDeVida extends AppCompatActivity {
     static final String TAG = "DEBUG";
 
     @Override

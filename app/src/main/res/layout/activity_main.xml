@@ -16,4 +16,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btnExemplo0"/>
+
+    <Button
+        android:id="@+id/btnExemplo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exemplo 1 - Soma" />
 </LinearLayout>
