@@ -16,7 +16,8 @@ public class CalculadoraActivity extends AppCompatActivity {
     EditText editText1, editText2;
     Button btnSoma;
     TextView txtXml, txtJava;
-    LinearLayout linearXml,linearJava;
+    LinearLayout linearXml,linearPrincipal;
+    LinearLayout linearLayoutJava;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,28 +29,48 @@ public class CalculadoraActivity extends AppCompatActivity {
         linearXml = (LinearLayout) findViewById(R.id.linearXml);
         txtXml = (TextView) findViewById(R.id.txtXml);
         btnSoma = (Button) findViewById(R.id.btnSoma);
+        linearPrincipal = (LinearLayout) findViewById(R.id.linearPrincipal);
+
+
+        //Criando Interface com Java
+        //LinearLayout p/ resultado
+
+        linearLayoutJava = new LinearLayout(this);
+        linearLayoutJava.setOrientation(LinearLayout.HORIZONTAL);
+        linearLayoutJava.setVisibility(View.GONE);
+        linearLayoutJava.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light));
+
+        //TextViews
+        TextView txtLabelResultado = new TextView(this);
+        txtLabelResultado.setText("Resultado pelo Java: ");
+        txtJava = new TextView(this);
+
+        //Add no Linear os dois TextViews
+        linearLayoutJava.addView(txtLabelResultado);
+        linearLayoutJava.addView(txtJava);
+
+        //Add o layout do resultado no layout principal
+        linearPrincipal.addView(linearLayoutJava);
+        //*** Fim Criando Interface com Java ****
 
         btnSoma.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                efetuarSoma();
+                String soma = getSoma();
+
+                if(!soma.isEmpty()){
+                    linearXml.setVisibility(View.VISIBLE);
+                    txtXml.setText(soma);
+
+                    linearLayoutJava.setVisibility(View.VISIBLE);
+                    txtJava.setText(soma);
+                }
             }
         });
-
-    }
-
-    private void efetuarSoma() {
-        String soma = getSoma();
-
-        if(!soma.isEmpty()){
-            linearXml.setVisibility(View.VISIBLE);
-            txtXml.setText(soma);
-        }
     }
 
     private String getSoma() {
         String num1 = editText1.getText().toString(),num2 = editText2.getText().toString();
-
 
         if(!num1.isEmpty() && !num2.isEmpty()) {
             int numero1 = Integer.parseInt(num1);
