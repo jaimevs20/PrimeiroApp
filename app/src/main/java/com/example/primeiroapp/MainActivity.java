@@ -9,8 +9,9 @@ import android.os.Bundle;
 
 import com.example.primeiroapp.exemplo0.PrimeiraActivity;
 import com.example.primeiroapp.exemplo1.CalculadoraActivity;
+import com.example.primeiroapp.exemplo2.LayoutInflaterActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnExemplo0 = (Button) findViewById(R.id.btnExemplo0);
         Button btnExemplo1 = (Button) findViewById(R.id.btnExemplo1);
+        Button btnExemplo2 = (Button) findViewById(R.id.btnExemplo2);
 
         btnExemplo0.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,6 +37,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnExemplo2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                chamaExemplo2();
+            }
+        });
+
+    }
+
+    private void chamaExemplo2() {
+        Intent it = new Intent(this, LayoutInflaterActivity.class);
+        startActivity(it);
     }
 
     private void chamaExemplo1() {

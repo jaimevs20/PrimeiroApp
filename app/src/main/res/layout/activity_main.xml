@@ -22,4 +22,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Exemplo 1 - Soma" />
+
+    <Button
+        android:id="@+id/btnExemplo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exemplo 2 - Inflater" />
 </LinearLayout>
