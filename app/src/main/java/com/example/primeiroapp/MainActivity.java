@@ -10,6 +10,7 @@ import android.os.Bundle;
 import com.example.primeiroapp.exemplo0.PrimeiraActivity;
 import com.example.primeiroapp.exemplo1.CalculadoraActivity;
 import com.example.primeiroapp.exemplo2.LayoutInflaterActivity;
+import com.example.primeiroapp.exemplo3.RecursosActivity;
 
 public class MainActivity extends AppCompatActivity{
 
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity{
         Button btnExemplo0 = (Button) findViewById(R.id.btnExemplo0);
         Button btnExemplo1 = (Button) findViewById(R.id.btnExemplo1);
         Button btnExemplo2 = (Button) findViewById(R.id.btnExemplo2);
+        Button btnExemplo3 = (Button) findViewById(R.id.btnExemplo3);
 
         btnExemplo0.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,6 +46,17 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
+        btnExemplo3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                chamaExemplo3();
+            }
+        });
+    }
+
+    private void chamaExemplo3() {
+        Intent it = new Intent(this, RecursosActivity.class);
+        startActivity(it);
     }
 
     private void chamaExemplo2() {

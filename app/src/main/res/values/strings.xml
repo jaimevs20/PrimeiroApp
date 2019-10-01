@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">PrimeiroApp</string>
+    <string name="lbl_nome">Nome</string>
+    <string name="lbl_telefone">Telefone</string>
+    <string name="endereco">Endereço</string>
+    <string name="btn_salvar">Salvar</string>
+    <string name="lbl_texto">Instruções pt br</string>
 </resources>

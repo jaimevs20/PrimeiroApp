@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".exemplo2.LayoutInflaterActivity"></activity>
+        <activity android:name=".exemplo3.RecursosActivity"></activity>
+        <activity android:name=".exemplo2.LayoutInflaterActivity" />
         <activity android:name=".exemplo1.CalculadoraActivity" />
         <activity
             android:name=".exemplo0.SegundaActivity"
