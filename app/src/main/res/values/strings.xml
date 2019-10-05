@@ -5,4 +5,5 @@
     <string name="endereco">Endereço</string>
     <string name="btn_salvar">Salvar</string>
     <string name="lbl_texto">Instruções pt br</string>
+    <string name="lbl_texto_formulario">Form com Estilo</string>
 </resources>

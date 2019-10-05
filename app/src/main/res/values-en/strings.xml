@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PrimeiroApp</string>
+    <string name="btn_salvar">Save</string>
+    <string name="endereco">Adress</string>
+    <string name="lbl_nome">Name</string>
+    <string name="lbl_telefone">Phone</string>
+    <string name="lbl_texto">Instructions english</string>
+    <string name="lbl_texto_formulario">Styled Form</string>
+</resources>

@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/EstiloExemplo"
-        android:text="Form com Estilo" />
+        android:text="@string/lbl_texto_formulario" />
 
     <TextView
         android:id="@+id/textView3"
@@ -65,9 +65,9 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/btn_star" />
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/bandeira" />
 
     <Button
         android:id="@+id/button"
