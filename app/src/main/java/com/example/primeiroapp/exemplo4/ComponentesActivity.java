@@ -75,9 +75,9 @@ public class ComponentesActivity extends AppCompatActivity {
         btnValores.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),/*"SO's selecionados: "+getComboBox()+"\n"
+                Toast.makeText(getApplicationContext(),/* "SO's selecionados: "+getComboBox()+"\n"
                                 + "Sexo selecionado: "+getSexo()+"\n"
-                                +"Status de Notificações:  "+getStatusNotificacoes()+"\n"*/
+                                +"Status de Notificações:  "+getStatusNotificacoes()+"\n" */
                         String.format("SO's selecionados: %s \n"
                                 + "Sexo selecionado: %s \n"
                                 +"Status de Notificações: %s",
