@@ -7,4 +7,11 @@
     <string name="lbl_telefone">Phone</string>
     <string name="lbl_texto">Instructions english</string>
     <string name="lbl_texto_formulario">Styled Form</string>
+    <string name="btnValores">Values</string>
+    <string name="notificacoes">Notifications</string>
+    <string name="radioButtonFeminino">Female</string>
+    <string name="radioButtonMasculino">Male</string>
+    <string name="senha">Password</string>
+    <string name="switchOff">No</string>
+    <string name="switchOn">Yes</string>
 </resources>

@@ -11,6 +11,7 @@ import com.example.primeiroapp.exemplo0.PrimeiraActivity;
 import com.example.primeiroapp.exemplo1.CalculadoraActivity;
 import com.example.primeiroapp.exemplo2.LayoutInflaterActivity;
 import com.example.primeiroapp.exemplo3.RecursosActivity;
+import com.example.primeiroapp.exemplo4.ComponentesActivity;
 
 public class MainActivity extends AppCompatActivity{
 
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity{
         Button btnExemplo1 = (Button) findViewById(R.id.btnExemplo1);
         Button btnExemplo2 = (Button) findViewById(R.id.btnExemplo2);
         Button btnExemplo3 = (Button) findViewById(R.id.btnExemplo3);
+        Button btnExemplo4 = (Button) findViewById(R.id.btnExemplo4);
 
         btnExemplo0.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +54,18 @@ public class MainActivity extends AppCompatActivity{
                 chamaExemplo3();
             }
         });
+
+        btnExemplo4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                chamaExemplo4();
+            }
+        });
+    }
+
+    private void chamaExemplo4() {
+        Intent it = new Intent(this, ComponentesActivity.class);
+        startActivity(it);
     }
 
     private void chamaExemplo3() {

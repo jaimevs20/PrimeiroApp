@@ -34,4 +34,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Exemplo 3 - Estilos" />
+
+    <Button
+        android:id="@+id/btnExemplo4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exemplo 4 - Componentes" />
 </LinearLayout>

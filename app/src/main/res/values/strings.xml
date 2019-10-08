@@ -6,4 +6,14 @@
     <string name="btn_salvar">Salvar</string>
     <string name="lbl_texto">Instruções pt br</string>
     <string name="lbl_texto_formulario">Form com Estilo</string>
+    <string name="checkBoxWindows" translatable="false">Windows Phone</string>
+    <string name="checkBoxIos" translatable="false">iOs</string>
+    <string name="checkBoxAndroid" translatable="false">Android</string>
+    <string name="radioButtonFeminino">Feminino</string>
+    <string name="radioButtonMasculino">Masculino</string>
+    <string name="notificacoes">Notificações</string>
+    <string name="btnValores">Valores</string>
+    <string name="senha">Senha</string>
+    <string name="switchOn">Sim</string>
+    <string name="switchOff">Não</string>
 </resources>
