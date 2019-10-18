@@ -35,7 +35,7 @@ public class SpinnerListActivity extends AppCompatActivity {
         spinnerEscolha.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getApplicationContext(),"Opção selecionada: "+ spinnerEscolha.getSelectedItem().toString(),Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext()," Opção selecionada: "+ spinnerEscolha.getSelectedItem().toString(),Toast.LENGTH_LONG).show();
 
                 if (position == 0)
                     chamaListViewSimples();
