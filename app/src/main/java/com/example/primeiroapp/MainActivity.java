@@ -12,6 +12,7 @@ import com.example.primeiroapp.exemplo1.CalculadoraActivity;
 import com.example.primeiroapp.exemplo2.LayoutInflaterActivity;
 import com.example.primeiroapp.exemplo3.RecursosActivity;
 import com.example.primeiroapp.exemplo4.ComponentesActivity;
+import com.example.primeiroapp.exemplo5.SpinnerListActivity;
 import com.example.primeiroapp.exemplo7.WebViewActivity;
 
 public class MainActivity extends AppCompatActivity{
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity{
         Button btnExemplo2 = (Button) findViewById(R.id.btnExemplo2);
         Button btnExemplo3 = (Button) findViewById(R.id.btnExemplo3);
         Button btnExemplo4 = (Button) findViewById(R.id.btnExemplo4);
+        Button btnExemplo5 = (Button) findViewById(R.id.btnExemplo5);
         Button btnExemplo7 = (Button) findViewById(R.id.btnExemplo7);
 
         btnExemplo0.setOnClickListener(new View.OnClickListener() {
@@ -64,6 +66,13 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
+        btnExemplo5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                chamaExemplo5();
+            }
+        });
+
         btnExemplo7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,6 +83,11 @@ public class MainActivity extends AppCompatActivity{
 
     private void chamaExemplo7() {
         Intent it = new Intent(this, WebViewActivity.class);
+        startActivity(it);
+    }
+
+    private void chamaExemplo5() {
+        Intent it = new Intent(this, SpinnerListActivity.class);
         startActivity(it);
     }
 

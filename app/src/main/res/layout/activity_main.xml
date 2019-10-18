@@ -41,11 +41,19 @@
         android:layout_height="wrap_content"
         android:text="Exemplo 4 - Componentes" />
 
+
+    <Button
+        android:id="@+id/btnExemplo5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exemplo 5 - Adapter" />
+
     <Button
         android:id="@+id/btnExemplo7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Exemplo 7 - WebView" />
+
 
 
 </LinearLayout>
