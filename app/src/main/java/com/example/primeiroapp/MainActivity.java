@@ -2,7 +2,10 @@ package com.example.primeiroapp;
 
 import android.content.Intent;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,12 +19,40 @@ import com.example.primeiroapp.exemplo5.SpinnerListActivity;
 import com.example.primeiroapp.exemplo7.WebViewActivity;
 
 public class MainActivity extends AppCompatActivity{
+    String[] exemplos = new String[] {"Exemplo 0", "Exemplo 1 - Soma", "Exemplo 2 - Inflater", "Exemplo 3 - Estilos",
+            "Exemplo 4 - Componentes", "Exemplo 5 - Adapter", "Exemplo 7 - WebView"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ListView listViewMain = (ListView) findViewById(R.id.listViewMain);
+        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, exemplos);
+        listViewMain.setAdapter(adapter);
+
+        listViewMain.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if (position == 0)
+                    chamaExemplo0();
+                else if (position == 1)
+                    chamaExemplo1();
+                else if (position == 2)
+                    chamaExemplo2();
+                else if (position == 3)
+                    chamaExemplo3();
+                else if (position == 4)
+                    chamaExemplo4();
+                else if (position == 5)
+                    chamaExemplo5();
+                else if (position == 6)
+                    chamaExemplo7();
+            }
+        });
+
+
+/*
         Button btnExemplo0 = (Button) findViewById(R.id.btnExemplo0);
         Button btnExemplo1 = (Button) findViewById(R.id.btnExemplo1);
         Button btnExemplo2 = (Button) findViewById(R.id.btnExemplo2);
@@ -79,6 +110,8 @@ public class MainActivity extends AppCompatActivity{
                 chamaExemplo7();
             }
         });
+
+ */
     }
 
     private void chamaExemplo7() {
