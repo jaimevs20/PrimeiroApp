@@ -17,11 +17,12 @@ import com.example.primeiroapp.exemplo2.LayoutInflaterActivity;
 import com.example.primeiroapp.exemplo3.RecursosActivity;
 import com.example.primeiroapp.exemplo4.ComponentesActivity;
 import com.example.primeiroapp.exemplo5.SpinnerListActivity;
+import com.example.primeiroapp.exemplo6.AlertasActivity;
 import com.example.primeiroapp.exemplo7.WebViewActivity;
 
 public class MainActivity extends AppCompatActivity{
     String[] exemplos = new String[] {"Exemplo 0", "Exemplo 1 - Soma", "Exemplo 2 - Inflater", "Exemplo 3 - Estilos",
-            "Exemplo 4 - Componentes", "Exemplo 5 - Adapter", "Exemplo 7 - WebView"};
+            "Exemplo 4 - Componentes", "Exemplo 5 - Adapter", "Exemplo 6 - Tipos de Alerta","Exemplo 7 - WebView"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +51,8 @@ public class MainActivity extends AppCompatActivity{
                 else if (position == 5)
                     classe = SpinnerListActivity.class;
                 else if (position == 6)
+                    classe = AlertasActivity.class;
+                else if (position == 7)
                     classe = WebViewActivity.class;
 
                 Intent it = new Intent(MainActivity.this, classe);

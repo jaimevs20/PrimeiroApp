@@ -11,40 +11,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".exemplo5.SpinnerListActivity"
+        <activity android:name=".exemplo6.AlertasActivity"></activity>
+        <activity
+            android:name=".exemplo5.SpinnerListActivity"
             android:label="Adapter Activity"
-            android:parentActivityName=".MainActivity"></activity>
-
-        <activity android:name=".exemplo7.WebViewActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".exemplo7.WebViewActivity"
             android:label="WebView Activity"
-            android:parentActivityName=".MainActivity"></activity>
-
-        <activity android:name=".exemplo4.ComponentesActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".exemplo4.ComponentesActivity"
             android:label="Componentes Activity"
-            android:parentActivityName=".MainActivity"/>
-
-        <activity android:name=".exemplo3.RecursosActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".exemplo3.RecursosActivity"
             android:label="Estilos Activity"
-            android:parentActivityName=".MainActivity"/>
-
-        <activity android:name=".exemplo2.LayoutInflaterActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".exemplo2.LayoutInflaterActivity"
             android:label="Inflater Activity"
-            android:parentActivityName=".MainActivity"/>
-
-        <activity android:name=".exemplo1.CalculadoraActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".exemplo1.CalculadoraActivity"
             android:label="Soma Activity"
-            android:parentActivityName=".MainActivity"
-            />
-
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".exemplo0.SegundaActivity"
             android:label="Segunda Activity"
-            android:parentActivityName=".exemplo0.PrimeiraActivity"
-            />
+            android:parentActivityName=".exemplo0.PrimeiraActivity" />
         <activity
             android:name=".exemplo0.PrimeiraActivity"
             android:label="Primeira Activity"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
