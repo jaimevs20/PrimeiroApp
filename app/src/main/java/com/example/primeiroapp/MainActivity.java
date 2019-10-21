@@ -1,6 +1,7 @@
 package com.example.primeiroapp;
 
 import android.content.Intent;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -34,20 +35,25 @@ public class MainActivity extends AppCompatActivity{
         listViewMain.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Class classe = null;
+
                 if (position == 0)
-                    chamaExemplo0();
+                    classe = PrimeiraActivity.class;
                 else if (position == 1)
-                    chamaExemplo1();
+                    classe = CalculadoraActivity.class;
                 else if (position == 2)
-                    chamaExemplo2();
+                    classe = LayoutInflaterActivity.class;
                 else if (position == 3)
-                    chamaExemplo3();
+                    classe = RecursosActivity.class;
                 else if (position == 4)
-                    chamaExemplo4();
+                    classe = ComponentesActivity.class;
                 else if (position == 5)
-                    chamaExemplo5();
+                    classe = SpinnerListActivity.class;
                 else if (position == 6)
-                    chamaExemplo7();
+                    classe = WebViewActivity.class;
+
+                Intent it = new Intent(MainActivity.this, classe);
+                startActivity(it);
             }
         });
 
@@ -113,7 +119,7 @@ public class MainActivity extends AppCompatActivity{
 
  */
     }
-
+/*
     private void chamaExemplo7() {
         Intent it = new Intent(this, WebViewActivity.class);
         startActivity(it);
@@ -148,4 +154,6 @@ public class MainActivity extends AppCompatActivity{
         Intent it = new Intent(this, PrimeiraActivity.class);
         startActivity(it);
     }
+
+ */
 }
