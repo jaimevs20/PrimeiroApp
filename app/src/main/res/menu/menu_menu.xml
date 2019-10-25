@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/acao_configuracoes"
+        android:title="Configurações"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_edit"/>
+    <item
+        android:id="@+id/acao_sobre"
+        android:title="Sobre"
+        android:orderInCategory="101"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_dialog_info"/>
+    <item
+        android:id="@+id/acao_abrir_browser"
+        android:title="Browser"
+        android:orderInCategory="102"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/acao_ligar"
+        android:title="Ligar"
+        android:orderInCategory="104"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/acao_sms"
+        android:title="Enviar SMS"
+        android:orderInCategory="105"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/acao_compartilhar"
+        android:title="Compartilhar"
+        android:orderInCategory="106"
+        app:showAsAction="never" />
+
+
+
+</menu>

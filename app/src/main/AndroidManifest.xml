@@ -3,6 +3,7 @@
     package="com.example.primeiroapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".exemplo6.AlertasActivity"></activity>
+        <activity android:name=".exemplo8.MenuActivity"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".exemplo6.AlertasActivity"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".exemplo5.SpinnerListActivity"
             android:label="Adapter Activity"

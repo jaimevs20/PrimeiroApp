@@ -1,13 +1,11 @@
 package com.example.primeiroapp;
 
 import android.content.Intent;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -19,10 +17,11 @@ import com.example.primeiroapp.exemplo4.ComponentesActivity;
 import com.example.primeiroapp.exemplo5.SpinnerListActivity;
 import com.example.primeiroapp.exemplo6.AlertasActivity;
 import com.example.primeiroapp.exemplo7.WebViewActivity;
+import com.example.primeiroapp.exemplo8.MenuActivity;
 
 public class MainActivity extends AppCompatActivity{
     String[] exemplos = new String[] {"Exemplo 0", "Exemplo 1 - Soma", "Exemplo 2 - Inflater", "Exemplo 3 - Estilos",
-            "Exemplo 4 - Componentes", "Exemplo 5 - Adapter", "Exemplo 6 - Tipos de Alerta","Exemplo 7 - WebView"};
+            "Exemplo 4 - Componentes", "Exemplo 5 - Adapter", "Exemplo 6 - Tipos de Alerta","Exemplo 7 - WebView", "Exemplo 8 - Intent"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +53,9 @@ public class MainActivity extends AppCompatActivity{
                     classe = AlertasActivity.class;
                 else if (position == 7)
                     classe = WebViewActivity.class;
+                else if (position == 8)
+                    classe = MenuActivity.class;
+
 
                 Intent it = new Intent(MainActivity.this, classe);
                 startActivity(it);

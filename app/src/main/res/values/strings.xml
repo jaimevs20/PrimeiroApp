@@ -16,4 +16,5 @@
     <string name="senha">Senha</string>
     <string name="switchOn">Sim</string>
     <string name="switchOff">Não</string>
+    <string name="title_activity_menu_intent">MenuIntentActivity</string>
 </resources>
